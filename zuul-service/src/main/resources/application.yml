@@ -2,7 +2,9 @@ server:
   port: 7019
 
 zuul:
+  # 禁用所有服务发现路由
   ignored-services: '*'
+  # 前缀
   prefix: /api
   routes:
     clienta: /clienta/**
